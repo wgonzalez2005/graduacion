@@ -1,5 +1,5 @@
 <?php
-class asistenciaModel extends Model
+class autobusModel extends Model
 {
 
     private static $b = [];

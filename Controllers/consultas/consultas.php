@@ -14,18 +14,32 @@ class consultas extends Controller
        
     }
 
-    public function getDatos()
+    /*AUTOBUSES*/
+    public function getAutobuses(){
+        $d         = $this->model->getAutobuses();
+        echo json_encode($d);    
+    }
+
+
+    public function getParticipantesAutobus()
     {
-        $d         = $this->model->getDatos();
-        echo json_encode($d);       
+        $d         = $this->model->getParticipantesAutobus();
+        echo json_encode($d);  
+    
+    }
+
+    public function UpdateEntregar()
+    {
+
+        $d                  = $this->model->UpdateEntregar();
+        echo json_encode($d); 
 
     }
 
-    public function UpdatePresente()
+    public function UpdateEntregar2()
     {
 
-        $id          = $_POST["id"];
-        $d                  = $this->model->UpdatePresente($id);
+        $d                  = $this->model->UpdateEntregar2();
         echo json_encode($d); 
 
     }
@@ -38,62 +52,62 @@ class consultas extends Controller
 
     }
 
-    public function getGraduandosId()
-    {
-        $id          = $_POST["id"];
-        $d                  = $this->model->getGraduandosId($id);
-        echo json_encode($d); 
+    // public function getGraduandosId()
+    // {
+    //     $id          = $_POST["id"];
+    //     $d                  = $this->model->getGraduandosId($id);
+    //     echo json_encode($d); 
 
-    }
+    // }
 
     /*ASISTENCIA*/
-    public function getDatosAsistencia()
-    {        
-        $d                  = $this->model->getDatosAsistencia();
-        echo json_encode($d); 
+    // public function getDatosAsistencia()
+    // {        
+    //     $d                  = $this->model->getDatosAsistencia();
+    //     echo json_encode($d); 
 
-    }
+    // }
 
     
-    public function BuscarGraduandosPresentes()
-    {
-        $bus          = "%".$_POST["bus"]."%";
-        $d                  = $this->model->BuscarGraduandosPresentes($bus);
-        echo json_encode($d); 
+    // public function BuscarGraduandosPresentes()
+    // {
+    //     $bus          = "%".$_POST["bus"]."%";
+    //     $d                  = $this->model->BuscarGraduandosPresentes($bus);
+    //     echo json_encode($d); 
 
-    }
+    // }
 
     /*OCUPACION*/
 
-    public function getDatosOcupacion()
-    {
-        $d                  = $this->model->getDatosOcupacion();
-        echo json_encode($d); 
+    // public function getDatosOcupacion()
+    // {
+    //     $d                  = $this->model->getDatosOcupacion();
+    //     echo json_encode($d); 
 
-    }
-    public function getDatosOcupacionId()
-    {
-        $id          = $_POST["id"];
-        $d                  = $this->model->getDatosOcupacionId($id);
-        echo json_encode($d); 
+    // }
+    // public function getDatosOcupacionId()
+    // {
+    //     $id          = $_POST["id"];
+    //     $d                  = $this->model->getDatosOcupacionId($id);
+    //     echo json_encode($d); 
 
-    }
+    // }
 
    /*FAMILIAS*/
 
-   public function getDatosFamilias()
-   {
-       $d                  = $this->model->getDatosFamilias();
-       echo json_encode($d); 
+//    public function getDatosFamilias()
+//    {
+//        $d                  = $this->model->getDatosFamilias();
+//        echo json_encode($d); 
 
-   }
-   public function getDatosFamiliasId()
-   {
-       $id          = $_POST["id"];
-       $d                  = $this->model->getDatosFamiliasId($id);
-       echo json_encode($d); 
+//    }
+//    public function getDatosFamiliasId()
+//    {
+//        $id          = $_POST["id"];
+//        $d                  = $this->model->getDatosFamiliasId($id);
+//        echo json_encode($d); 
 
-   }
+//    }
 
 
 

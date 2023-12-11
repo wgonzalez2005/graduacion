@@ -65,12 +65,12 @@
                                         <a class="nav-link" href="inicio"> Inicio </a>
                                     </li>
                                     
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                         <a class="nav-link" href="ocupacion">Ocupación </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="familia">Familia</a>
-                                    </li>
+                                    </li> -->
 
                                     <li class="nav-item">
                                         <a class="nav-link" href="autobus">Autobus</a>
@@ -111,12 +111,15 @@
                     <table class="table table-striped">
                         <thead class="header-table">
                         <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">CEDULA</th>
+                                <th scope="col">ID</th>                               
                                 <th scope="col">NOMBRE</th>
                                 <th scope="col">OCUPACION</th>
                                 <th scope="col">FAMILIA</th>
-                                <th class="text-center" scope="col">ESATADO</th>
+                                <th scope="col">AUTOBUS</th>
+                                <th scope="col">COORDINADOR</th>
+                                <th scope="col">TELEFONO</th>
+                                <th scope="col">LOCALIDAD</th>
+                                <th class="text-center" scope="col">ESTADO</th>
                                 <th class="text-center" scope="col">OP</th>
                             </tr>
                         </thead>

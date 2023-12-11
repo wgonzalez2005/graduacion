@@ -26,6 +26,17 @@
 @import url(jquery-ui.css);
 @import url(nice-select.css);
 
+.fa-times{
+   color: red;
+   cursor: pointer;
+   font-size:3em!important;
+}
+.fa-check{
+color:#00ff00;
+cursor: pointer;
+font-size: 3em!important;
+}
+
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
 * {

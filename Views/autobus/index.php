@@ -63,17 +63,19 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarsExample04">
                                 <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item">
+                                    <li class="nav-item active">
                                         <a class="nav-link" href="inicio"> Inicio </a>
                                     </li>
-                                    <li class="nav-item  active">
-                                        <a class="nav-link" href="asistencia">Asistencia</a>
-                                    </li>
-                                    <li class="nav-item">
+                                    
+                                    <!-- <li class="nav-item">
                                         <a class="nav-link" href="ocupacion">Ocupación </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="familia">Familia</a>
+                                    </li> -->
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="autobus">Autobus</a>
                                     </li>
                                                                      
                                 </ul>
@@ -94,38 +96,53 @@
     <div class="hottest">
         <div class="container-fluid">
             <div class="row d_flex">
-                <div class="col-md-12">
-                  
+                <div class="col-md-5">
+                   
                     <div class="container-fluid contenedor-tabla">
-                    <h1 class="text-center" style="background-color:#13110e ;color:white;padding:10px;">Asistencia Graduandos</h1>
-                    <div class="titlepage">
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon2">Buscar:</span>
-                            <input type="text" class="form-control" style="border-color:black;"
-                                placeholder="Buscar Graduandos" aria-label="Recipient's username"
-                                aria-describedby="basic-addon2" id="buscar">
-                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-search" id="btnBuscar"></i>
-                                </i></span>
-                        </div>
-                    </div>
+                    <h1 class="text-center" style="background-color:#13110e ;color:white;padding:10px;">Graduandos por Autobus</h1>
                     <table class="table  table-striped">
                         <thead class="header-table">
                             <tr>
                                 <th scope="col">ID</th>
-                                <th scope="col">CEDULA</th>
-                                <th scope="col">NOMBRE</th>
-                                <th scope="col">OCUPACION</th>
-                                <th scope="col">FAMILIA</th>
-                                <th class="text-center" scope="col">ESATADO</th>
-                                <th class="text-center" scope="col">OP</th>
+                                <th scope="col">DESCRIPCION</th> 
+                                <th scope="col">COORDINADOR</th>                 
+                                <th class="text-center" scope="col">TELEFONO</th>
+                                <th class="text-center" scope="col">LOCALIDAD</th>      
+                                <th class="text-center" scope="col">TOTAL</th>                           
+                                <th class="text-center" scope="col">VER</th>
                             </tr>
                         </thead>
-                        <tbody id="datagraduandos">
-                    
+                        <tbody id="datosautobus">
+                          
                         </tbody>
                     </table>
                     </div>
                 </div>
+                <div class="col-md-7">
+                   
+                   <div class="container-fluid contenedor-tabla">
+                   <h1 class="text-center" style="background-color:#13110e ;color:white;padding:10px;">Listado Graduandos por Autobus</h1>
+                   <table class="table  table-striped">
+                       <thead class="header-table">
+                           <tr>
+                               <th scope="col">ID</th>
+                               <th scope="col">NOMBRE</th>
+                               <th scope="col">OCUPACION</th>
+                               <th scope="col">FAMILIA</th>    
+                               <th scope="col">COORDINADOR</th>    
+                               <th scope="col">LOCALIDAD</th>                                                    
+                               <th class="text-center" scope="col">ENTREGADO</th>
+                               <th class="text-center" scope="col">OP</th>
+                           </tr>
+                       </thead>
+                       <tbody id="datosgraduandos">
+                         
+                       </tbody>
+                   </table>
+
+               
+                   </div>
+               </div>
             </div>
             <h1 class="text-right" id="cantidad">Cantidad: 0 </h1>
         </div>
@@ -198,8 +215,7 @@
     <!-- sidebar -->
     <script src="<?php echo RUTA; ?>public/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="<?php echo RUTA; ?>public/js/custom.js"></script>
-    <script src="<?php echo RUTA; ?>public/app/asistencia.js"></script>
-    
+    <script src="<?php echo RUTA; ?>public/app/autobus.js"></script>
 </body>
 
 </html>

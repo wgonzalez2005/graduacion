@@ -4,7 +4,7 @@ session_start();
 define("RUTA", $_SERVER['REQUEST_SCHEME'] . ":/" . "/" . $_SERVER['SERVER_NAME'] ."/graduacion/api/");
 define("HOST", "127.0.0.1");
 define("USER", "root");
-define("PASSWORD", "");
+define("PASSWORD", "Admin@123--");
 define("DB", "db_graduacion");
 define("PORT", "3306");
 define("CHARSET", "utf8");
