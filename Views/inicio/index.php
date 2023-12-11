@@ -64,14 +64,16 @@
                                     <li class="nav-item active">
                                         <a class="nav-link" href="inicio"> Inicio </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="asistencia">Asistencia</a>
-                                    </li>
+                                    
                                     <li class="nav-item">
                                         <a class="nav-link" href="ocupacion">Ocupación </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="familia">Familia</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="autobus">Autobus</a>
                                     </li>
                                                                      
                                 </ul>

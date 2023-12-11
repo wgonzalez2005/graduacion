@@ -10,42 +10,6 @@ class consultasModel extends Model
 
     }
 
-    public function getDatos()
-    {
-     
-        $items = [];        
-        try {
-            $sql   = "call getGraduandos();";
-            $query = $this->db->conectar()->prepare($sql);           
-            $query->execute();
-            return $query->fetchAll(PDO::FETCH_ASSOC);
-        } catch (PDOEception $e) {
-            return [];
-        }
-   
-
-    }
-
-    public function UpdatePresente($id)
-    {
-    
-            $items = [];
-           
-            try {
-                $sql   = "call setPresente(:id);";
-                $query = $this->db->conectar()->prepare($sql); 
-
-                $query->bindParam(':id', $id);
-                $query->execute();
-                 
-                $items[0]=$query->fetchAll(PDO::FETCH_ASSOC);
-                $items[1]=$this->getDatos();
-                return $items;
-
-            } catch (PDOEception $e) {
-                return [];
-            }
-    }
 
     public function getGraduandosId($id)
     {
@@ -71,7 +35,7 @@ class consultasModel extends Model
             $items = [];
            
             try {
-                $sql   = "call getBuscarGraduando(:bus);";
+                $sql   = "call getBuscarGraduandosAll(:bus);";
                 $query = $this->db->conectar()->prepare($sql);                 
                 $query->bindParam(':bus', $bus);
                 $query->execute();
